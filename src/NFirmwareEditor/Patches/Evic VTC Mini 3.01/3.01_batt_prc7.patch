@@ -1,6 +1,6 @@
-﻿<Patch Definition="Evic VTC Mini 3.01" Name="Battery Percentage" Version="1.3" Author="NFirmwareEditor Team">
-  <Description>Adds percentage value to the battery icon.
-Изменение стиля значка аккумулятора с добавлением значения уровня заряда в процентах.</Description>
+﻿<Patch Definition="Evic VTC Mini 3.01" Name="Battery Percentage (reloaded)" Version="1.7" Author="NFirmwareEditor Team">
+  <Description>Adds percentage value to the battery icon, for both display versions.
+Изменение стиля значка аккумулятора с добавлением значения уровня заряда в процентах, универсальная версия.</Description>
   <Data>
 00005DA6: AE - 00
 00005DA7: 22 - BF
@@ -209,62 +209,64 @@
 0000BC3E: 1C - 00
 0000BC3F: 03 - 00
 0000BC40: 01 - 00
+
 0000BE90: 00 - 1F
 0000BE91: 00 - B4
-0000BE92: 00 - 15 ; X%
-0000BE93: 00 - 20
-0000BE94: 00 - 72
-0000BE95: 00 - 21
-0000BE96: 00 - AC
-0000BE97: 00 - 22
-0000BE98: 80 - F8
-0000BE99: 80 - F7
-0000BE9A: C0 - 3E
-0000BE9B: E0 - FF
-0000BE9C: E0 - 0E ; X3
-0000BE9D: F0 - 20
-0000BE9E: F8 - 72
-0000BE9F: F8 - 21
-0000BEA0: F8 - 0B
-0000BEA1: FC - 22
-0000BEA2: FC - F8
-0000BEA3: FE - F7
-0000BEA4: FE - 39
-0000BEA5: FE - FF
-0000BEA6: FE - 0B
-0000BEA7: FF - 48
-0000BEA8: FF - 02
-0000BEA9: FF - 78
+0000BE92: 00 - 10
+0000BE93: 00 - 48
+0000BE94: 00 - 02
+0000BE95: 00 - 78
+0000BE96: 00 - 00
+0000BE97: 00 - 2A
+0000BE98: 80 - 0F
+0000BE99: 80 - D0
+0000BE9A: C0 - 0A
+0000BE9B: E0 - 2A
+0000BE9C: E0 - 08
+0000BE9D: F0 - D1
+0000BE9E: F8 - 0C ; 1st - 1
+0000BE9F: F8 - 22
+0000BEA0: F8 - 72 ; 1st Y pos
+0000BEA1: FC - 21
+0000BEA2: FC - 02 ; 1st X pos
+0000BEA3: FE - 20
+0000BEA4: FE - F8
+0000BEA5: FE - F7
+0000BEA6: FE - 38
+0000BEA7: FF - FF
+0000BEA8: FF - 00
+0000BEA9: FF - 22
 0000BEAA: FF - 00
-0000BEAB: FF - 2A
-0000BEAC: FF - 0F
-0000BEAD: FF - D0
-0000BEAE: FF - 0A
-0000BEAF: FF - 2A
-0000BEB0: FF - 08
-0000BEB1: FF - D1
-0000BEB2: FF - 72
+0000BEAB: FF - BF
+0000BEAC: FF - 00
+0000BEAD: FF - BF
+0000BEAE: FF - 00
+0000BEAF: FF - BF
+0000BEB0: FF - 0B ; 2nd digit
+0000BEB1: FF - 32
+0000BEB2: FF - 72 ; 2nd Y pos
 0000BEB3: FF - 21
-0000BEB4: FF - 08 ; X2
+0000BEB4: FF - 08 ; 2nd X pos
 0000BEB5: FF - 20
-0000BEB6: FF - 0B
-0000BEB7: FF - 22
-0000BEB8: FE - F8
-0000BEB9: FE - F7
-0000BEBA: FE - 2E
-0000BEBB: FE - FF
-0000BEBC: FC - 0C
-0000BEBD: FC - 22
-0000BEBE: F8 - 72
-0000BEBF: F8 - 21
-0000BEC0: F0 - 02 ; X1
-0000BEC1: F0 - 20
-0000BEC2: E0 - 02
-0000BEC4: C0 - 0B
-0000BEC5: 80 - 32
-0000BEC6: 00 - 72
+0000BEB6: FF - F8
+0000BEB7: FF - F7
+0000BEB8: FE - 2F
+0000BEB9: FE - FF
+0000BEBA: FE - 0B ; 3rd digit
+0000BEBB: FE - 22
+0000BEBC: FC - 72 ; 3rd Y pos
+0000BEBD: FC - 21
+0000BEBE: F8 - 0E ; 3rd X pos
+0000BEBF: F8 - 20
+0000BEC0: F0 - F8
+0000BEC1: F0 - F7
+0000BEC2: E0 - 2A
+0000BEC3: E0 - FF
+0000BEC4: C0 - AC ; % charcode
+0000BEC5: 80 - 22
+0000BEC6: 00 - 72 ; % Y pos
 0000BEC7: 00 - 21
-0000BEC8: 00 - 08 ; X2
+0000BEC8: 00 - 15 ; % X pos
 0000BEC9: 00 - 20
 0000BECA: 00 - F8
 0000BECB: 00 - F7
@@ -272,6 +274,7 @@
 0000BECD: 00 - FF
 0000BECE: 00 - 1F
 0000BECF: 00 - BC
+0000BED0: 00 - 00
 0000BED1: 00 - F0
 0000BED2: 80 - 68
 0000BED3: E0 - B8
@@ -279,6 +282,7 @@
 0000BED5: FC - 00
 0000BED6: FE - 00
 0000BED7: FF - 20
+
 0000BFA0: 7F - FF
 0000BFA1: 7F - F7
 0000BFA2: 7F - 76

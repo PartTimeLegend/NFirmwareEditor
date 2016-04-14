@@ -1,6 +1,8 @@
-﻿<Patch Definition="Evic VTC Mini 3.01" Name="Battery Percentage" Version="1.3" Author="NFirmwareEditor Team">
+﻿<Patch Definition="Evic VTC Mini 3.01" Name="Battery Percentage" Version="1.4" Author="NFirmwareEditor Team">
   <Description>Adds percentage value to the battery icon.
-Изменение стиля значка аккумулятора с добавлением значения уровня заряда в процентах.</Description>
+Version for SSD1327 display.
+Изменение стиля значка аккумулятора с добавлением значения уровня заряда в процентах.
+Адаптация под экраны SSD1327.</Description>
   <Data>
 00005DA6: AE - 00
 00005DA7: 22 - BF
@@ -245,7 +247,7 @@
 0000BEB1: FF - D1
 0000BEB2: FF - 72
 0000BEB3: FF - 21
-0000BEB4: FF - 08 ; X2
+0000BEB4: FF - 07 ; X2
 0000BEB5: FF - 20
 0000BEB6: FF - 0B
 0000BEB7: FF - 22
@@ -257,14 +259,14 @@
 0000BEBD: FC - 22
 0000BEBE: F8 - 72
 0000BEBF: F8 - 21
-0000BEC0: F0 - 02 ; X1
+0000BEC0: F0 - 00 ; X1
 0000BEC1: F0 - 20
 0000BEC2: E0 - 02
 0000BEC4: C0 - 0B
 0000BEC5: 80 - 32
 0000BEC6: 00 - 72
 0000BEC7: 00 - 21
-0000BEC8: 00 - 08 ; X2
+0000BEC8: 00 - 07 ; X2
 0000BEC9: 00 - 20
 0000BECA: 00 - F8
 0000BECB: 00 - F7

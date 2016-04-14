@@ -132,7 +132,7 @@ namespace NFirmwareEditor.Windows
 
 				UpdateUI(() => UpdateStatusLabel.Text = @"Reading dataflash...");
 				var dataflash = m_updater.ReadDataFlash(worker);
-				if (dataflash.LoadFromLdrom != true)
+				if (dataflash.LoadFromLdrom == false && dataflash.FirmwareVersion > 0)
 				{
 					dataflash.LoadFromLdrom = true;
 					UpdateUI(() => UpdateStatusLabel.Text = @"Writing dataflash...");
@@ -162,7 +162,14 @@ namespace NFirmwareEditor.Windows
 		// ReSharper disable once InconsistentNaming
 		private void UpdateUI(Action action)
 		{
-			Invoke(action);
+			try
+			{
+				Invoke(action);
+			}
+			catch (Exception)
+			{
+				// Ignore
+			}
 		}
 	}
 }
