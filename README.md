@@ -1,4 +1,7 @@
 # NFirmwareEditor
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/372ece1a1e5a4e52a1ad7db7af460081)](https://www.codacy.com/app/PartTimeLegend/NFirmwareEditor?utm_source=github.com&utm_medium=referral&utm_content=PartTimeLegend/NFirmwareEditor&utm_campaign=badger)
+
 Firmware editor and updater for vaping devices such as:
 
 * Joyetech: Evic VTC Mini, Cuboid;
